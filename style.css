@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    margin: 30px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    
+}
+.caixa li:hover{
+    box-shadow: 5px 5px #e8f906;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+       text-decoration: underline;
+}
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px;
+}
+.copyright{
+    margin: 30px 0 0;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+.contato{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 10px 0;
+    background: #e8f906;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+   background:#ff8c00;
+   transform: scale(1.2);
+}
+.enviar:active{
+    background:#ff0000;
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*CSS da Página inicial*/
+
+.banner {
+    width: 100%; 
+    height: 350px;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.titulo-principal:before{
+    content: "[ ";
+}
+.titulo-principal:after{
+    content: " ]";
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    height: 120px;
+    float: left;
+    margin: 0 15px 15px 0;
+    opacity: 0.8;
+    transition: 600ms;
+    box-shadow: 2px 2px 10px 6px #000000;
+}
+.utensilios:hover{
+    opacity: 1;
+    
+}
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens{
+    line-height: 1.5;
+}
+.itens:before{
+    content: "✶";
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.imagem-beneficios{
+    width: 60%;
+    opacity: 0.8;
+    transition: 600ms;
+    box-shadow: 10px 10px 10px 3px #000000;
+
+}
+.imagem-beneficios:hover{
+   opacity: 1;    
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
